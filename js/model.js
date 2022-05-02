@@ -9,6 +9,10 @@ export default class Model{
 		this.view=view;
 	}
 	
+	save() {
+		localStorage.setItem('todos', JSON.stringify(this.todos));
+	  }
+
 	getTodos(){
 		return this.todos;
 	}
